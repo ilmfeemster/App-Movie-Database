@@ -44,8 +44,6 @@
 		006718A02AF84BD900AEA1CF = {
 			isa = PBXGroup;
 			children = (
-				006718C52AF8571E00AEA1CF /* SettingsController.swift */,
-				006718C32AF8570E00AEA1CF /* SearchController.swift */,
 				006718AB2AF84BD900AEA1CF /* App-Movie-Database */,
 				006718AA2AF84BD900AEA1CF /* Products */,
 			);
@@ -65,6 +63,8 @@
 				006718C02AF8553400AEA1CF /* Supporting */,
 				006718B02AF84BD900AEA1CF /* ViewController.swift */,
 				006718C12AF8562200AEA1CF /* DiscoverController.swift */,
+				006718C52AF8571E00AEA1CF /* SettingsController.swift */,
+				006718C32AF8570E00AEA1CF /* SearchController.swift */,
 				006718BA2AF84BDD00AEA1CF /* Info.plist */,
 			);
 			path = "App-Movie-Database";
