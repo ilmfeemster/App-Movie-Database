@@ -16,6 +16,8 @@
 		006718C62AF8571E00AEA1CF /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006718C52AF8571E00AEA1CF /* SettingsController.swift */; };
 		006718C82AF8580800AEA1CF /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006718C72AF8580800AEA1CF /* ProfileController.swift */; };
 		006718CA2AF8598C00AEA1CF /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006718C92AF8598C00AEA1CF /* TabController.swift */; };
+		006BA69D2B2E2FBF00C11E6C /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BA69C2B2E2FBF00C11E6C /* CustomCollectionViewCell.swift */; };
+		006BA6A12B2E582B00C11E6C /* CollectionViewSubtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BA6A02B2E582B00C11E6C /* CollectionViewSubtitle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		006718C52AF8571E00AEA1CF /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		006718C72AF8580800AEA1CF /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		006718C92AF8598C00AEA1CF /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		006BA69C2B2E2FBF00C11E6C /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		006BA6A02B2E582B00C11E6C /* CollectionViewSubtitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewSubtitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				006718C32AF8570E00AEA1CF /* SearchController.swift */,
 				006718C52AF8571E00AEA1CF /* SettingsController.swift */,
 				006718C72AF8580800AEA1CF /* ProfileController.swift */,
+				006BA69C2B2E2FBF00C11E6C /* CustomCollectionViewCell.swift */,
+				006BA6A02B2E582B00C11E6C /* CollectionViewSubtitle.swift */,
 				006718BA2AF84BDD00AEA1CF /* Info.plist */,
 			);
 			path = "App-Movie-Database";
@@ -157,6 +163,8 @@
 				006718CA2AF8598C00AEA1CF /* TabController.swift in Sources */,
 				006718C82AF8580800AEA1CF /* ProfileController.swift in Sources */,
 				006718C62AF8571E00AEA1CF /* SettingsController.swift in Sources */,
+				006BA6A12B2E582B00C11E6C /* CollectionViewSubtitle.swift in Sources */,
+				006BA69D2B2E2FBF00C11E6C /* CustomCollectionViewCell.swift in Sources */,
 				006718B12AF84BD900AEA1CF /* HomeController.swift in Sources */,
 				006718C42AF8570E00AEA1CF /* SearchController.swift in Sources */,
 				006718AD2AF84BD900AEA1CF /* AppDelegate.swift in Sources */,
