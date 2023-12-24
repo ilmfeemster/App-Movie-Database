@@ -12,7 +12,6 @@ class TabController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupTabs()
-
     }
     
     private func setupTabs() {
@@ -33,4 +32,5 @@ class TabController: UITabBarController {
         nav.viewControllers.first?.navigationItem.largeTitleDisplayMode = .always
         return nav
     }
+    
 }

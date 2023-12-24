@@ -14,7 +14,7 @@ class CollectionViewSubtitle: UICollectionReusableView {
      var label: UILabel = {
          let label: UILabel = UILabel()
          label.textColor = .gray
-         label.font = UIFont.systemFont(ofSize: 16, weight: .light)
+         label.font = UIFont.systemFont(ofSize: 18, weight: .light)
          label.sizeToFit()
          return label
      }()
@@ -26,7 +26,7 @@ class CollectionViewSubtitle: UICollectionReusableView {
          label.translatesAutoresizingMaskIntoConstraints = false
          
          NSLayoutConstraint.activate([
-            label.topAnchor.constraint(equalTo: self.topAnchor, constant: 8),
+            label.topAnchor.constraint(equalTo: self.topAnchor, constant: 0),
             label.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0),
             label.rightAnchor.constraint(equalTo: self.rightAnchor),
          ])

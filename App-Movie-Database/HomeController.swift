@@ -9,11 +9,11 @@ import UIKit
 
 class HomeController: UIViewController {
     
-    // MARK: - Variables
+// MARK: - Variables
     private var images: [UIImage] = []
 
     
-    // MARK: - UI Compponents
+// MARK: - UI Compponents
     let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
@@ -31,6 +31,7 @@ class HomeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        setupNavBar()
         
         for _ in 0...25 {
             images.append(UIImage(named: "1")!)
@@ -44,7 +45,7 @@ class HomeController: UIViewController {
         self.collectionView.delegate = self
     }
     
-    // MARK: - UI Setup
+// MARK: - UI Setup
     private func setupUI() {
         self.view.addSubview(collectionView)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -60,6 +61,14 @@ class HomeController: UIViewController {
             collectionView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
         ])
     }
+    
+    private func setupNavBar() {
+        let filtersButton = UIBarButtonItem(image: UIImage(systemName: "line.3.horizontal.decrease.circle"), style: .plain, target: self, action: nil)
+        filtersButton.tintColor = .white
+        
+        self.navigationItem.rightBarButtonItem = filtersButton
+    }
+
 }
 
 extension HomeController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
@@ -73,7 +82,7 @@ extension HomeController: UICollectionViewDataSource, UICollectionViewDelegate, 
         }
         
         let image = self.images[indexPath.row]
-        cell.configure(with: image)
+        cell.configure(with: image, titled: "need api setup")
         
         
         return cell
@@ -81,7 +90,7 @@ extension HomeController: UICollectionViewDataSource, UICollectionViewDelegate, 
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let size = (self.view.frame.width / 2) - 20
-        return CGSize(width: size, height: size * (16/9))
+        return CGSize(width: size, height: (size * (3/2)) + 18)
     }
     
     //Veritcal Spacing
