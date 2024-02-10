@@ -11,6 +11,7 @@ class HomeController: UIViewController {
     
 // MARK: - Variables
     private var images: [UIImage] = []
+    
 
     
 // MARK: - UI Compponents
@@ -74,7 +75,7 @@ class HomeController: UIViewController {
 
 }
 
-// MARK: - Extension
+// MARK: - Extensions
 
 extension HomeController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -87,7 +88,7 @@ extension HomeController: UICollectionViewDataSource, UICollectionViewDelegate, 
         }
         
         let image = self.images[indexPath.row]
-        cell.configure(with: image, titled: "need api setup")
+        cell.configure(with: image, titled: "xd")
         
         
         return cell
@@ -122,5 +123,18 @@ extension HomeController: UICollectionViewDataSource, UICollectionViewDelegate, 
     //Header Size
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         CGSize(width: collectionView.frame.width, height: 40)
+    }
+}
+
+extension UIImageView {
+    func load(url: URL) {
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url),
+               let image = UIImage(data: data) {
+                DispatchQueue.main.async {
+                    self?.image = image
+                }
+            }
+        }
     }
 }

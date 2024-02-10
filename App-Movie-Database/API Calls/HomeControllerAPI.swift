@@ -8,6 +8,7 @@
 import Foundation
 
 class APIClient {
+    var movieResults: [Movie] = []
     let headers = [
       "accept": "application/json",
       "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlZjQ0NTM3N2UxZGJiZTkyYzliZDI5NjA1YjRjNTNlOSIsInN1YiI6IjY1OTgwNzhhZDdhNzBhMTFjNzZhZmQwMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.iITTrM0u6cCX54mwUrNZa0pLgz3wvLHcsaKoS6oeVQw"
@@ -38,7 +39,8 @@ class APIClient {
                     let decoder = JSONDecoder()
                     decoder.keyDecodingStrategy = .convertFromSnakeCase
                     let decodedMovies = try decoder.decode(MovieResponse.self, from: jsonData)
-                    print("Decoded User: \(decodedMovies)")
+                    self.movieResults = decodedMovies.results
+                    print("Decoded User: \(decodedMovies.results)")
                 } catch {
                     print("Error decoding JSON: \(error)")
                 }
