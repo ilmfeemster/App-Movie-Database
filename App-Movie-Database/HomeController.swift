@@ -41,6 +41,9 @@ class HomeController: UIViewController {
             images.append(UIImage(named: "5")!)
         }
         
+        let apiClient = APIClient()
+        apiClient.fetchMovies()
+        
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
     }
@@ -70,6 +73,8 @@ class HomeController: UIViewController {
     }
 
 }
+
+// MARK: - Extension
 
 extension HomeController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

@@ -18,6 +18,9 @@
 		006718CA2AF8598C00AEA1CF /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006718C92AF8598C00AEA1CF /* TabController.swift */; };
 		006BA69D2B2E2FBF00C11E6C /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BA69C2B2E2FBF00C11E6C /* CustomCollectionViewCell.swift */; };
 		006BA6A12B2E582B00C11E6C /* CollectionViewSubtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BA6A02B2E582B00C11E6C /* CollectionViewSubtitle.swift */; };
+		009E08732B76FC3C00CEBE6B /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009E08722B76FC3C00CEBE6B /* MovieModel.swift */; };
+		009E08752B76FD7500CEBE6B /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009E08742B76FD7500CEBE6B /* MovieResponse.swift */; };
+		009E08782B7703B300CEBE6B /* HomeControllerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009E08772B7703B300CEBE6B /* HomeControllerAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		006718C92AF8598C00AEA1CF /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		006BA69C2B2E2FBF00C11E6C /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		006BA6A02B2E582B00C11E6C /* CollectionViewSubtitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewSubtitle.swift; sourceTree = "<group>"; };
+		009E08722B76FC3C00CEBE6B /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		009E08742B76FD7500CEBE6B /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
+		009E08772B7703B300CEBE6B /* HomeControllerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +72,9 @@
 		006718AB2AF84BD900AEA1CF /* App-Movie-Database */ = {
 			isa = PBXGroup;
 			children = (
+				009E08762B77038F00CEBE6B /* API Calls */,
 				006718C02AF8553400AEA1CF /* Supporting */,
+				009E08712B76FB7C00CEBE6B /* Models */,
 				006718C92AF8598C00AEA1CF /* TabController.swift */,
 				006718B02AF84BD900AEA1CF /* HomeController.swift */,
 				006718C32AF8570E00AEA1CF /* SearchController.swift */,
@@ -88,6 +96,23 @@
 				006718AE2AF84BD900AEA1CF /* SceneDelegate.swift */,
 			);
 			path = Supporting;
+			sourceTree = "<group>";
+		};
+		009E08712B76FB7C00CEBE6B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				009E08722B76FC3C00CEBE6B /* MovieModel.swift */,
+				009E08742B76FD7500CEBE6B /* MovieResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		009E08762B77038F00CEBE6B /* API Calls */ = {
+			isa = PBXGroup;
+			children = (
+				009E08772B7703B300CEBE6B /* HomeControllerAPI.swift */,
+			);
+			path = "API Calls";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,11 +187,14 @@
 			files = (
 				006718CA2AF8598C00AEA1CF /* TabController.swift in Sources */,
 				006718C82AF8580800AEA1CF /* ProfileController.swift in Sources */,
+				009E08732B76FC3C00CEBE6B /* MovieModel.swift in Sources */,
 				006718C62AF8571E00AEA1CF /* SettingsController.swift in Sources */,
 				006BA6A12B2E582B00C11E6C /* CollectionViewSubtitle.swift in Sources */,
+				009E08782B7703B300CEBE6B /* HomeControllerAPI.swift in Sources */,
 				006BA69D2B2E2FBF00C11E6C /* CustomCollectionViewCell.swift in Sources */,
 				006718B12AF84BD900AEA1CF /* HomeController.swift in Sources */,
 				006718C42AF8570E00AEA1CF /* SearchController.swift in Sources */,
+				009E08752B76FD7500CEBE6B /* MovieResponse.swift in Sources */,
 				006718AD2AF84BD900AEA1CF /* AppDelegate.swift in Sources */,
 				006718AF2AF84BD900AEA1CF /* SceneDelegate.swift in Sources */,
 			);
